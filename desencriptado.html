@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enigma</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo2">
+            <a href="index.html">
+                <img src="Imagenes/logopeque.png" alt="logo ENIGMA DESENCRIPTADOR">
+            </a>
+        </div>
+        <div class="container">
+            <!-- Caja de entrada y salida -->
+            <div class="cajas">
+                <textarea id="textoEncriptado" class="textoEncriptado" placeholder="Texto Encriptado"></textarea>
+                <textarea id="textoDesencriptado" class="textoDesencriptado" placeholder="Texto Desencriptado" readonly></textarea>
+            </div>
+            <!-- Botones -->
+            <div class="botones2">
+                <button onclick="desencriptar()">Desencriptar</button>
+                <button onclick="copiarTexto()">Copiar Texto</button>
+            </div>
+        </div>
+
+        <div id="overlay" class="overlay">
+            <button id="closeButton" class="closeButton">&times;</button>
+            <img src="Imagenes/muñeco.png" alt="Imagen de advertencia">
+            <p id="overlay-text">¡Ups! Lo siento no escribiste ningún mensaje</p>
+        </div>
+
+        <div id="overlayImagen" class="overlay">
+            <div class="overlay-content">
+                <img src="Imagenes/muñeco2.png" alt="Texto copiado" width="100">
+                <p>¡Se copió tu texto satisfactoriamente!</p>
+            </div>
+        </div>
+
+        <div id="overlayNoEncriptado" class="overlay">
+            <div class="overlay-content">
+                <img src="Imagenes/imagen_error.png" alt="No encriptado" width="100">
+                <p>Lo sentimos, el texto que ingresaste no está encriptado.</p>
+            </div>
+        </div>
+    </header>
+
+   
+    <footer>
+        <!-- Agrega aquí el texto de tu footer -->
+        <p>&#169;2024 Alejandro Calderon</p>
+    </footer>
+
+    <video autoplay muted loop id="videoFondo">
+        <source src="videos/video2.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+      </video>
+    
+
+    <!-- Agrega aquí tus archivos JavaScript -->
+    <script src="desencriptado.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="desencriptado.html">
+                <img src="Imagenes/Logo.png" alt="logo ENIGMA">
+            </a>
+            <div class="caja">
+                <div class="entrada">
+                    <textarea id="textoDesencriptado" placeholder="Escriba su mensaje aqui por favor..."></textarea>
+                    <div class="botones">
+                        <button onclick="encriptar()" class="encriptar">Encriptar</button>
+                    </div>
+                </div>
+                <div class="salida">
+                    <textarea id="textoEncriptado" readonly placeholder="Su mensaje encriptado"></textarea>
+                    <div class="botones">
+                        <button onclick="desencriptar()" class="desencriptar">Desencriptar</button>
+                        <button onclick="copiarTextoEncriptado()" class="copiar">Copiar</button>
+                       
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <img src="imagenes/imagen_error.png" alt="Mensaje de advertencia">
+            <p>Por favor ingresa un texto para ser encriptado</p>
+            <span class="close-btn" onclick="ocultarOverlay()">&times;</span>
+        </div>  
+    </div>
+
+    <video autoplay muted loop id="videoFondo">
+        <source src="videos/video1.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+      </video>
+
+
+      <footer class="footer1">
+        <p>&copy; Alejandro Calderon 2024 </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    
+</body>
+
+</html>
+

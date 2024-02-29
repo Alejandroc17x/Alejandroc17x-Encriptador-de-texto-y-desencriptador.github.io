@@ -1,0 +1,363 @@
+.fira-sans-thin {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 10px; /* Separación de 10px desde el borde superior */
+}
+
+.logo img {
+    width: 400px;
+    height: 210px;
+    margin-bottom: 5px; /* Separación de 5px desde las cajas */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+
+
+
+.entrada textarea,
+.salida textarea {
+    padding: 20px; /* Ajustando el padding para igualarlo al padding del contenedor */
+    width: 500px; /* Ajustando el ancho de las áreas de texto */
+    height: 270px; /* Ajustando la altura de las áreas de texto */
+    box-sizing: border-box;
+    border: 2px solid #2bff00;
+    resize: none;
+}
+
+.entrada,
+.salida {
+    padding: 20px;
+    float: left;
+    width: 520px; /* Ajustando el ancho del contenedor incluyendo el padding */
+    height: 340px; /* Ajustando la altura del contenedor */
+    border-color: chartreuse;
+}
+
+.entrada {
+    margin-right: 20px; /* Ajustando el margen para que sea simétrico */
+}
+
+.botones {
+    clear: both;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; /* Centrar los botones horizontalmente */
+}
+
+.botones button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-color: white;
+    border-radius: 5px;
+    background-color: chartreuse;
+    transition: all 0.1s ease;
+    font-weight: bold;
+}
+
+.botones button:active {
+    transform: scale(1.05);
+    background-color: white;
+    color: black;
+}
+
+#entradaUsuario {
+    padding: 2px;
+}
+
+#output {
+    padding: 2px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.overlay-content img {
+    width: 100px;
+    height: 100px;
+}
+
+.overlay-content p {
+    margin-top: 20px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.overlay-content img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    padding: 0;
+    outline: none;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+#videoFondo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000; /* Asegura que el video esté detrás de todo el contenido */
+    background-size: cover;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.menu a {
+    display: block;
+    color: black;
+    padding: 8px 0;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #f1f1f1;
+}
+
+  .footer1 p{
+    color: #2bff00;
+  }
+  
+ 
+/*css desencriptador*/
+
+
+.container {
+    width: 100%; /* Anchura del contenedor */
+    margin: 0 auto; /* Centrado horizontal */
+    margin-right: 30px;
+    
+}
+
+.cajas {
+display: flex; /* Mostrar las cajas en línea */
+}
+
+.textoEncriptado,
+.textoDesencriptado {
+    padding: 20px; /* Ajustando el padding para igualarlo al padding del contenedor */
+    width: 500px; /* Ajustando el ancho de las áreas de texto */
+    height: 270px; /* Ajustando la altura de las áreas de texto */
+    box-sizing: border-box;
+    border: 2px solid rgb(119, 0, 255);
+    resize: none;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.botones2 {
+    margin-top: 20px;
+    text-align: center; /* Centrar botones */
+}
+
+.botones2 button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-color: white;
+    border-radius: 5px;
+    background-color: rgb(119, 0, 255);
+    transition: all 0.1s ease;
+    font-weight: bold;
+    color: white;
+}
+
+.botones2 button:active {
+    transform: scale(1.05);
+    background-color: white;
+    color: black;
+}
+
+
+
+.logo2 {
+    text-align: center;
+    margin-top: 10px; /* Separación de 10px desde el borde superior */
+    padding-bottom: 4em;
+}
+
+.logo2 img {
+    width: 600px; /* Ancho fijo */
+    height: auto; /* Altura ajustada automáticamente para mantener la relación de aspecto */
+    margin-bottom: 5px; /* Separación de 5px desde las cajas */
+}
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay img {
+    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+}
+
+.overlay p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+footer{
+    position: fixed; /* Fija la posición del footer */
+    bottom: 0; /* Lo coloca al fondo de la página */
+    width: 100%; /* Ocupa todo el ancho de la página */
+    background-color: none; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+footer p{
+    color: mediumpurple;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .logo img {
+        width: 300px; /* Reducir el ancho del logo */
+        height: auto; /* Mantener la proporción */
+    }
+
+    .entrada textarea,
+    .salida textarea {
+        width: 80%; /* Utilizar un ancho relativo para adaptarse a pantallas grandes */
+        max-width: 600px; /* Establecer un ancho máximo para evitar que se estire demasiado */
+        height: 200px; /* Reducir la altura de las áreas de texto */
+    }
+
+    .entrada,
+    .salida {
+        width: 90%; /* Utilizar un ancho relativo para adaptarse a pantallas grandes */
+        max-width: 800px; /* Establecer un ancho máximo para evitar que se estire demasiado */
+        height: auto; /* Permitir que la altura se ajuste automáticamente */
+    }
+
+
+/*codigo media pagina 2*/
+.logo2 img {
+    width: 300px; /* Reducir el ancho del logo */
+    height: auto; /* Mantener la proporción */
+}
+
+.container {
+    padding: 0 15px; /* Ajustar el padding en dispositivos más pequeños */
+    display: flex;
+    flex-direction: column; /* Cambiar la dirección del contenedor a columna */
+    align-items: center; /* Centrar los elementos horizontalmente */
+}
+.textoEncriptado,
+.textoDesencriptado {
+    width: 100%;
+    margin: 10px auto;
+    margin-right: 27px;
+}
+.textoDesencriptado {
+    margin-left: 20px;
+
+}
+
+.closeButton {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 3vw; /* Tamaño del icono en relación con el ancho de la ventana gráfica */
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+}
+
